@@ -1,0 +1,155 @@
+﻿@import "compass/css3";
+
+.wrapper {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;  
+  
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  
+  font-weight: bold;
+  text-align: center;
+  background: #000080;
+  padding: 8px;
+  border-bottom: 10px solid #dddddd;
+}
+
+.wrapper > * {
+  padding: 0px;
+  flex: 1 100%;
+
+}
+
+.header {
+  background: #bbbbbb;
+  text-align: center;
+  height: 50px;
+  border-bottom: 10px solid #dddddd;
+}
+
+.footer {
+  background: #bbbbbb;
+  text-align: center;
+  height: 50px;
+}
+
+
+
+.container1 {
+  background: #f08080;
+  height: 50px;
+
+}
+
+.container2 {
+  background: #8a2be2;
+  height: 50px;
+}
+.container3 {
+  background: #a52a2a;
+  height: 50px;
+}
+
+.container4 {
+  background: #20b2aa;
+  height: 50px;
+}
+.container5 {
+  background: #4169e1;
+  height: 50px;
+}
+
+
+
+@media all and (min-width: 320px) {
+  .aside { flex: 1 auto; }
+  
+}
+
+@media all and (min-width: 800px) {
+
+  .header {
+  height: 60px;
+}
+
+
+
+.footer {
+  height: 60px;
+}
+ .wrapper > * {
+  padding: 0px;
+  flex: 1 38%;
+}
+  
+  .container1 { 
+    order: 1; 
+    height: 60px;
+  } 
+  .container2 {
+    order: 2;
+    height: 60px;
+  }
+  .container3{ 
+    order: 3; 
+    height: 60px; 
+  }
+  .container4 {
+   order: 5; 
+   height: 60px;
+ }
+  .container5 {
+   order: 4;
+   height: 60px;
+ }
+}
+
+
+@media all and (min-width: 1000px) {
+
+
+.header {
+  height: 70px;
+}
+
+
+.footer {
+  height: 70px;
+}
+
+
+ .wrapper > * {
+  padding: 0px;
+  flex: 1 33%;
+  height: 70px;
+}
+  
+  .container1 { 
+    order: 1; 
+    height: 70px;
+  } 
+  .container2 {
+    order: 2;
+    height: 70px;
+  }
+  .container3{ 
+    order: 3;
+    height: 70px; 
+  }
+  .container4 {
+   order: 4; 
+   height: 70px;
+ }
+  .container5 {
+   order: 5;
+   height: 70px;
+ }
+  
+}
+
+body {
+  padding: 2em; 
+}
